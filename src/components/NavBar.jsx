@@ -12,7 +12,25 @@ useGSAP(() => {
             trigger:'nav',
             start:'bottom top'
         }
+       
     });
+gsap.from('nav ul li',{
+  y:-50,
+  opacity:0,
+  duration:1,
+  ease:'power3.out',
+  stagger:0.1,
+  delay:0.3
+});
+
+gsap.from('nav img,nav p',{
+  y:-50,
+  opacity:0,
+  duration:1,
+  ease:'power3.out',
+  stagger:0.1,
+  delay:0.3
+});
 
   navTween.fromTo('nav', { backgroundColor:'transparent'}, {
 
